@@ -1,0 +1,132 @@
+
+
+/* main */
+
+.main{
+    padding: 40px 9%;
+}
+.main nav a{
+    background-color:rgb(206, 199, 199);
+    border-radius: 30px;
+    color: black;
+    font-weight: bold;
+    padding: 10px 15;
+}
+
+.main nav{
+    display: flex;
+    justify-content: center;
+    column-gap: 15px;
+}
+
+.main nav a:hover{
+    color: var(--second-color);
+}
+
+.main nav a:focus{
+    color:#fff;
+    background-color: var(--second-color);
+}
+
+
+/*Trending-Section */
+
+ #trending-cards-container{
+    display: flex;
+    width: 100%;
+    padding: 15px 8%;
+ }
+
+ .trending-sub-container{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+
+ }
+ 
+ .trending-card{
+    background-color: rgba(87, 88, 88, 0.103);
+    width: 45%;
+    border-radius: 25px;
+    position: relative;
+ }
+ .abs{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--first-color);
+    color: #fff;
+    width: 65px;
+    border-radius: 21px;
+    padding: 5px;
+    text-align: center;
+}
+
+.trending-card :nth-child(1) , .categories-card :nth-child(2){
+    cursor: pointer;
+    width: 100%;
+    border-radius: 25px;
+    height: 68%;
+ }
+
+ .trending-card div{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+ }
+
+ .trending-card div img{
+     background-color: var(--second-color);
+    border-radius: 50%;
+    padding: 4px;
+    width: 45px;
+    height: 45px;
+}
+
+ .trending-card div p span{
+    color: gray;
+    font-size: small;
+ }
+
+ 
+ .trending-card div p{
+    font-weight: 600;
+    font-size: large;
+ }
+
+.trending-card:hover .pp {
+    color: var(--first-color);
+    transition: all .5s ease;
+}
+.trending-card:hover div img {
+    background-color: var(--first-color);
+    transition: all .5s ease;
+}
+
+/* Medias*/
+
+/* Medias for 990px */
+
+@media screen and (max-width:990px){
+    #trending-cards-container{
+        flex-direction: column;
+        row-gap: 35px;
+    }
+
+    .trending-sub-container{
+        width: 100%;
+    }
+}
+
+/* Medias for 770px */
+@media screen and (max-width:770px) {
+    .trending-sub-container{
+        flex-direction: column;
+        row-gap: 35px;
+    
+    }
+    
+    .trending-card{
+        width: 100%;
+    }
+}

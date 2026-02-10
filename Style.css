@@ -1,0 +1,510 @@
+
+ 
+/* Main Section */
+
+#first-container{
+    background-image: url(images/banner-bg.jpg);
+    background-size: cover;
+    border-radius: 0px 0px 160px  160px;
+    padding: 150px 0px;
+    position: relative;
+    margin-bottom:150px;
+}
+#hero-containar{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding: 50px 0px;
+    color: #fff;
+    margin-bottom: 100px;
+
+}
+
+#hero-containar h2{
+    font-size: 55px;
+}
+
+#hero-containar h6{
+    font-size: 25px;
+    font-weight: 400;
+}
+#banner-image-container{
+        width: 45%;
+        display: flex;
+        justify-content: end;
+        
+    } 
+
+#banner-image{
+    border-radius: 30px;
+    width: 70%;
+    height: 530px;
+    background-image: url(images/banner-image.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    
+    
+}
+
+.btn1 , .btn2{
+    position: absolute;
+    color: #fff;
+    font-size: larger;
+    font-weight: bolder;
+}
+
+.btn1{
+    background-color: var(--first-color);
+    border-radius: 35px;
+    right: 19px;
+    top: 12px;
+    padding: 15px 25px;
+}
+
+.btn2{
+    background-color: var(--second-color);
+    border-radius: 50%;
+    left: -18px;
+    bottom: -18px;
+    padding: 35px 15px;
+    font-size: 2em;
+}
+
+#text{
+    width: 55%;
+    line-height: 1.5;
+    padding-top: 120px;
+}
+
+#text img{
+    margin-left: 23%;
+}
+
+form{
+    background-color: #fff;
+    margin-top: 50px;
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+
+input{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    padding: 15px 25px;
+    border-radius: 30px;
+}
+
+.button{
+    background-color: var(--second-color);
+    color: #fff;
+    cursor: pointer;
+}
+
+form :nth-child(2):hover{
+    background-color: var(--first-color);
+    margin-right: .1px;
+    transition: all .5s ease;
+}
+
+/* Card Section */
+
+#card-main-container{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+    position: absolute;
+    bottom: -400px;
+    padding: 0px 8%;
+}
+.card-container{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    height: 195px;
+}
+
+.card{
+    text-align: center;
+    border-radius: 35px;
+    width: 46%;
+    height: 100%;
+    box-shadow: 2px 2px 9px gray;
+    background-color: #fff;
+    padding: 35px;
+    cursor: pointer;
+}
+
+.card > img{
+    width: 80px;
+    height: 80px;
+    background-color: var(--first-color);
+    padding: 18px;
+    border-radius: 50%;
+}
+
+.card > p{
+    line-height: 72px;
+    font-weight: 600;
+}
+
+.card:hover img{
+    background-color: var(--second-color);
+    transition: all .5s ease;
+}
+
+ /*Trending-Section */
+
+#trending-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 55px 9%;
+    
+ }
+ .trending-text-one{
+    width: 45%;
+    line-height: 55px;
+    font-size: 1.5em;
+ }
+ .trending-text-one p{
+    color: var(--second-color);
+ }
+ #trending-text-two a{
+    padding: 12px 25px;
+    border-radius: 30px;
+}
+
+ #trending-text-two a:hover{
+    background-color: var(--first-color);
+}
+
+
+ #trending-cards-container{
+    display: flex;
+    width: 100%;
+    padding: 15px 8%;
+ }
+
+ .trending-sub-container{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+
+ }
+ 
+ .trending-card{
+    background-color: rgba(87, 88, 88, 0.103);
+    width: 45%;
+    border-radius: 25px;
+    position: relative;
+ }
+ .abs{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: var(--first-color);
+    color: #fff;
+    width: 65px;
+    border-radius: 21px;
+    padding: 5px;
+    text-align: center;
+}
+
+.trending-card :nth-child(1) , .categories-card :nth-child(2){
+    cursor: pointer;
+    width: 100%;
+    border-radius: 25px;
+    height: 68%;
+ }
+
+ .trending-card div{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px 25px;
+ }
+
+ .trending-card div img{
+     background-color: var(--second-color);
+    border-radius: 50%;
+    padding: 4px;
+    width: 45px;
+    height: 45px;
+}
+
+ .trending-card div p span{
+    color: gray;
+    font-size: small;
+ }
+
+ 
+ .trending-card div p{
+    font-weight: 600;
+    font-size: large;
+ }
+
+.trending-card:hover .pp {
+    color: var(--first-color);
+    transition: all .5s ease;
+}
+.trending-card:hover div img {
+    background-color: var(--first-color);
+    transition: all .5s ease;
+}
+
+/* Top-Games-Section  */
+.top-container{
+        background-color:var(--thrid-color) ;
+        padding-bottom: 85px;
+        border-radius: 160px;
+    }
+.abs-top{
+        position: absolute;
+    border-radius: 25px;
+    color: #fff;
+    bottom: -15px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 10px;
+    background-color: var(--second-color);
+}
+
+.top-sub-container{
+    text-align: center;
+}
+.trending-card{
+    padding-bottom: 25px;
+}
+
+.top-sub-container .trending-card:hover .abs-top{
+    background-color: var(--first-color);
+}
+
+
+/* Categories-Section  */
+    .categories-text-one{
+        text-align: center;
+        width: 100%;
+    }
+
+    .categories-card{
+        background-color: var(--first-color);
+        height: fit-content;
+        padding-bottom: 0px;
+    }
+    .categories-card :nth-child(1){
+        height: 15%;
+        padding: 15px;
+        color: #fff;
+        font-weight: bold;
+    }
+
+
+/* Last-Section  */
+    .last-Section{
+        margin: 95px 9%;
+        text-align: center;
+        position: relative;
+        padding-bottom: 70px;
+    }
+    
+    .last-Section img{
+        border-radius: 30px;
+    }
+    
+    .sub-card{
+        position: absolute;
+        border-radius: 30px;
+        bottom: -110px;
+        padding: 60px;
+        background-color: var(--thrid-color);
+        text-align: left;
+        margin-bottom: 70px;
+    }
+    .sub-card1{
+        left: 0px;
+        right: 60%;
+        top:80px;
+        padding: 7%;
+    }
+    .sub-card2{
+        right: 0px;
+        left: 60%;
+        top: 180px;
+    }
+
+    .sub-card h4{
+        color: var(--second-color);
+    }
+
+    .mainp{
+        font-size: 35px;
+        font-weight: bold;
+        margin: 5px 0px;
+    }
+
+    .mainp span{
+        color: var(--first-color);
+    }
+    .subp{
+        font-size: small;
+        color: rgb(39, 38, 38);
+        margin: 75px 0px;
+    }
+   
+    .btnn{
+        color: #ffff;
+        background-color: var(--second-color);
+        padding: 15px 25px;
+        border-radius: 30px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .form-container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .form-child1{
+        width: 45%;
+    }
+    .form-child2{
+        width: 130px;
+        padding: 10px 15px;
+    }
+    .btnn:hover{
+        background-color: var(--first-color);
+    }
+
+                
+/* Medias Section */
+
+/* Medias for 990px */
+
+@media screen and (max-width:990px) {
+    header img{
+        width: 111px;
+        height: 41px;
+    }
+    #first-container{
+        margin-bottom: 350px;
+    }
+    #hero-containar{
+        flex-direction: column;
+        align-items: center;
+       }
+
+    #text{
+        width: 100% !important;
+        padding: 0px 0px 100px 0px;
+        text-align: center;
+    }
+
+    #banner-image-container{
+        width: 90%;
+        justify-content: center;
+    } 
+
+    #banner-image{
+        width: 100%;
+        height: 630px;
+
+    }
+
+    form{
+        width:100%;
+    }
+
+    #card-main-container{
+        flex-direction: column;
+        row-gap: 29px;
+        bottom: -1100px;
+    }
+    
+    .card-container{
+        width: 100%;
+    }
+    .card{
+        width: 45%;
+    }
+
+    #trending-text-two{
+        display: none;
+    }
+
+    .trending-text-one{
+        width: 100%;
+    }
+
+    #trending-cards-container{
+        flex-direction: column;
+        row-gap: 35px;
+    }
+
+    .trending-sub-container{
+        width: 100%;
+    }
+
+    .top-container{
+        text-align: center;
+
+    }
+    .last-Section img{
+        display: none;
+    }
+
+    .sub-card{
+        position: static;
+        width: 100%;
+        margin: 25px 0px;
+    }
+
+    .form-child1{
+        width: 95%;
+    }
+}
+
+/* Medias for 770px */
+
+@media screen and (max-width:770px) {
+   header nav{
+    display: none;
+   }
+   
+   #first-container{
+    margin-bottom: 950px;
+}
+#card-main-container{
+    bottom: -1800px;
+}
+
+.card-container{
+    row-gap: 29px;
+    flex-direction: column;
+    height: 70vh;
+}
+.card{
+    width: 100%;
+}
+
+.trending-sub-container{
+    flex-direction: column;
+    row-gap: 35px;
+
+}
+
+.trending-card{
+    width: 100%;
+}
+.top-container{
+    text-align: center;
+    row-gap: 35px;
+}
+}
+
+
